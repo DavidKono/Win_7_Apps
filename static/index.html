@@ -1,0 +1,44 @@
+<DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="7.css">
+</head>
+
+<body >
+    <div id="split-vertical">
+        <script type="module" src="../build/calendar.js" defer></script>
+        <script type="module" src="../build/chat.js" defer></script>
+    </div>
+
+    <footer class="taskbar">
+
+        <div class="start-icon"></div>
+        
+        <div class="taskbar-controls">
+            <button class="taskbar-icon">
+                <img src="img/taskbar/action-center.webp">
+            </button>
+            <button class="taskbar-icon">
+                <img src="img/taskbar/network.webp">
+            </button>
+            <button class="taskbar-icon">
+                <img src="img/taskbar/volume.webp">
+            </button>
+
+            <div class="taskbar-time">
+                <!-- unix epoch -->
+                <span id="clock_time">00:00</span>
+                <span id="clock_date"> 1/1/1970</span>
+            </div>
+            <script type="module" src="../build/time.js" defer></script>
+
+        </div>
+        
+    </footer>
+
+</body>
+
+</html>

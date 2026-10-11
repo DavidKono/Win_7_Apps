@@ -1,0 +1,44 @@
+{
+    "name": "win7-apps",
+    "main": "electron.js",
+    "version": "0.1.0",
+    "scripts": {
+        "build": "tsc src/*.ts --outDir build --module NodeNext --moduleResolution nodenext",
+        "watch": "tsc src/*.ts --outDir build --module NodeNext --moduleResolution nodenext --watch",
+        "start": "electron electron.js",
+        "dev": "concurrently \"npm:watch\" \"npm:start\"",
+        "dist": "npm run build && electron-builder"
+    },
+    "dependencies": {
+        "typescript": "^5.9.3"
+    },
+    "type": "module",
+    "devDependencies": {
+        "electron": "^40.0.0",
+        "concurrently": "^9.2.1",
+        "electron-builder": "^26.7.0"
+    },
+
+"build": {
+  "productName": "Win7-apps",
+  "directories": {
+    "buildResources": "assets",
+    "output": "dist"
+  },
+  "files": [
+    "build/**/*",
+    "static/**/*",
+    "electron.js",
+    "package.json"
+  ],
+  "mac": {
+    "target": "dmg"
+  },
+  "win": {
+    "target": "nsis"
+  },
+  "linux": {
+    "target": "AppImage"
+  }
+}
+}
