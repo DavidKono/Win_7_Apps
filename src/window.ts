@@ -21,3 +21,10 @@ export function createWindow(title: string) {
         element: windowEl,
     }
 }
+
+export function replaceWin(window_name: string, element: HTMLElement) {
+    const window = document.getElementById(window_name)
+
+    window?.replaceChildren(element)
+    window?.appendChild(element)
+}

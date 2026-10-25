@@ -3,8 +3,8 @@
     "main": "electron.js",
     "version": "0.1.0",
     "scripts": {
-        "build": "tsc src/*.ts --outDir build --module NodeNext --moduleResolution nodenext",
-        "watch": "tsc src/*.ts --outDir build --module NodeNext --moduleResolution nodenext --watch",
+        "build": "tsc src/**/*.ts src/*.ts --outDir build --module NodeNext --moduleResolution nodenext",
+        "watch": "tsc src/**/*.ts src/*.ts --outDir build --module NodeNext --moduleResolution nodenext --watch",
         "start": "electron electron.js",
         "dev": "concurrently \"npm:watch\" \"npm:start\"",
         "dist": "npm run build && electron-builder"

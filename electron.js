@@ -6,18 +6,18 @@ let win = null
 
 function createWindow() {
     win = new BrowserWindow({
-        fullscreen: true,
-        // x:60,
-        // y:60,
-        // width:1800,
-        // height:1000,
+        // fullscreen: true,
+        x:0,
+        y:0,
+        width:800,
+        height:600,
         webPreferences:{
             nodeIntegration: true,
             contextIsolation: false
         }
     })
 
-    // win.webContents.openDevTools({mode:'detach'})
+    win.webContents.openDevTools({mode:'detach'})
 
     win.loadFile("static/index.html")
 

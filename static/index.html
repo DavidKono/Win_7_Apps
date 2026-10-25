@@ -9,13 +9,16 @@
 
 <body >
     <div id="split-vertical">
-        <script type="module" src="../build/calendar.js" defer></script>
-        <script type="module" src="../build/chat.js" defer></script>
+        <div id="win1">
+        </div>
+        <div id="win2">
+        </div>
     </div>
 
-    <footer class="taskbar">
+    <footer id="taskbar">
 
         <div class="start-icon"></div>
+        <div id="app-icons"></div>
         
         <div class="taskbar-controls">
             <button class="taskbar-icon">
@@ -38,6 +41,7 @@
         </div>
         
     </footer>
+    <script type="module" src="../build/app-icons.js" defer></script>
 
 </body>
 
