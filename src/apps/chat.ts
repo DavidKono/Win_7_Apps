@@ -11,7 +11,6 @@ export function get_html() {
     bonzi_div.style.width =  "200px"
     
     const bonzi_gif = document.createElement("img")
-    // bonzi_gif.src = "img/bonzi/Greet.gif"
     bonzi_gif.src = "img/bonzi/HandsBehind.gif"
     bonzi_gif.width = 200
     
@@ -23,6 +22,5 @@ export function get_html() {
     chat_body?.appendChild(bonzi_div)
     chat_body?.appendChild(message_div)
     
-    // replaceWin(window, chat.element)
     return chat.element
 }

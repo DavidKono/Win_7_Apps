@@ -24,6 +24,7 @@ function app_icon(img_src: string, module: string, window_position: string) {
     split?.appendChild(icon_div)
 }
 
-app_icon("img/ie.png", "calendar.js", "win1")
+app_icon("img/info.png", "calendar.js", "win1")
+app_icon("img/ie.png", "search.js", "win1")
 app_icon("img/aero.png", "chat.js", "win2")
 app_icon("img/timer.png", "timer.js", "win1")

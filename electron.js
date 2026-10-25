@@ -13,11 +13,12 @@ function createWindow() {
         height:600,
         webPreferences:{
             nodeIntegration: true,
-            contextIsolation: false
+            contextIsolation: false,
+            webviewTag: true
         }
     })
 
-    win.webContents.openDevTools({mode:'detach'})
+    // win.webContents.openDevTools({mode:'detach'})
 
     win.loadFile("static/index.html")
 
